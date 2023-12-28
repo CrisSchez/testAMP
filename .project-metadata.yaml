@@ -19,7 +19,6 @@ tasks:
     script: amp_retail_0/dataRead.py
     short_summary: loaddata 
     long_summary: load data from csv.
-    kernel: python3
     cpu: 2
     memory: 4
 
@@ -27,7 +26,6 @@ tasks:
     name: adjustDates
     script: amp_retail_0/adjustDate.py
     short_summary: adjustdate
-    kernel: python3
     cpu: 2
     memory: 4
   
@@ -36,7 +34,6 @@ tasks:
     script: amp_retail_stock/train_model_stock.py
     short_summary: train model and create experiments
     long_summary: train model and create experiments
-    kernel: python3
     cpu: 2
     memory: 4
  
@@ -45,7 +42,6 @@ tasks:
     script: amp_retail_stock/get_champion_viz_stock.py
     short_summary: deploy best model
     long_summary: deploy best model
-    kernel: python3
     cpu: 2
     memory: 4
 
@@ -84,7 +80,6 @@ tasks:
     long_summary: Create job to fine-tune an LLM on the s-nlp/paradetox dataset. This job will not be automatically launched during AMP startup. A sample LoRA adapter fine-tuned with this job script and dataset is included in the git repository.
     cpu: 2
     memory: 8
-    gpu: 1
     environment:
       TASK_TYPE: CREATE/RUN_JOB
       
@@ -98,7 +93,6 @@ tasks:
     long_summary: Job to deploy best model
     cpu: 2
     memory: 4
-    gpu: 1
     environment:
       TASK_TYPE: CREATE/RUN_JOB
   
