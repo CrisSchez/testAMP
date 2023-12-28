@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+mlflow
+git+https://github.com/fastforwardlabs/cmlbootstrap#egg=cmlbootstrap
+dill
+seaborn

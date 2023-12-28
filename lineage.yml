@@ -1,0 +1,10 @@
+"ModelOpsStocks_viz":
+      hive_table_qualified_names:                # this is a predefined key to link to training data
+        - "default.transactiondata@cm"              
+        - "default.customers@cm"
+        - "default.products@cm"               # the qualifiedName of the hive_table object representing                
+
+      metadata:                                  # this is a predefined key for additional metadata
+        query: "select * from historical_data"   # suggested use case: query used to extract training data
+        training_file: "get_champion_stock_viz.py"       # suggested use case: training file used
+    
